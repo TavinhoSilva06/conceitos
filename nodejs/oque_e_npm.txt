@@ -1,0 +1,16 @@
+O que é NPM?
+
+Com o npm, desenvolvedores de JavaScript podem encontrar e
+instalar pacotes de código em suas aplicações de rede ou
+projetos de servidor.
+
+Um pacote node.js é um diretório com um ou mais módulos ou
+bibliotecas JavaScript, usados para adicionar várias
+funcionalidades a aplicativos ou scripts. Sem os pacotes, os
+desenvolvedores e engenheiros de software precisam escrever
+código do zero para cada funcionalidade que seu projeto necessita.
+
+Referencia: https://www.hostinger.com.br/tutoriais/o-que-e-npm
+
+
+

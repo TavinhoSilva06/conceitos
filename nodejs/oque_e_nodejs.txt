@@ -1,6 +1,12 @@
 O que é node js em no máximo 5 linhas.
 
-Assim como Github, os desenvolvedores de JavaScript usam pra guardar os arquivos e pra não escrever os códigos do zero.
-Os desenvolvedores de JavaScript usam o nodejs para fazer uma espécie de commit, para que tenham pontos no meio do caminho, para não precisar
-escrever tudo do zero, pois para alterar ou continuar com o processo de tal projeto JavaScript, é preciso que reescrevam o código todo novamente.
-Entãop ara que isso não aconteça, eles usam o nodejs, para ter um "checkpoint" de onde estavam.
+O Node.js pode ser definido como um ambiente de execução Javascript server-side.
+Isso significa que com o Node.js é possível criar aplicações Javascript para rodar como uma
+aplicação standalone em uma máquina, não dependendo de um browser para a execução, como estamos acostumados.
+Apesar de recente, o Node.js já é utilizado por grandes empresas no mercado de tecnologia, como Netflix, Uber e LinkedIn.
+
+Referencia: https://www.opus-software.com.br/insights/node-js/
+
+Dicionário:
+Pesquisar o que é standalone
+pesquisar o que é server-side
