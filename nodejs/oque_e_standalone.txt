@@ -1,0 +1,9 @@
+O que é santd-alone?
+
+São chamados stand alone , ou stand-alone (literalmente "ficam em pé por si só") os programas completamente autossuficientes: para seu
+funcionamento não necessitam de um software auxiliar, como um interpretador, sob o qual terão de ser executados.
+
+Outro exemplo de objecto que pode ser classificado como "stand alone" são os duplicadores de DVD. São "stand alone" os duplicadores de
+DVD que não necessitam de um computador para trabalhar, mas o fazem independentemente.
+
+Referencia: https://pt.wikipedia.org/wiki/Standalone

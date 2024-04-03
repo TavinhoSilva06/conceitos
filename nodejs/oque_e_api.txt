@@ -1,1 +1,10 @@
 O que é api?
+
+API, sigla para Application Programming Interface (Interface de Programação de Aplicações), é um
+conjunto de regras e definições que permite que diferentes sistemas e programas de computador se
+comuniquem entre si. 
+
+Ela atua como uma ponte que integra e facilita a operação e a comunicação de softwares independentes,
+como também pode ser pensada como um contrato de serviço entre duas aplicações.
+
+Referencia: skyone.solutions

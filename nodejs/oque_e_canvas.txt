@@ -1,0 +1,7 @@
+O que é canvas?
+
+Canvas é um elemento da HTML5 destinado a delimitar uma área para renderização dinâmica de gráficos.
+Todo o trabalho de criação e animação é realizado através de linguagens de programação dinâmica (usualmente Javascript). 
+O elemento foi originalmente introduzido pela Apple Inc. para o navegador Safari. 
+
+Referencia: https://robsoncamargo.com.br/blog/O-que-e-Canvas
