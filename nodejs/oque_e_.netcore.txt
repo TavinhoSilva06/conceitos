@@ -1,0 +1,10 @@
+O que é .net core?
+
+Moderno e inovador. ASP.NET Core foi projetado para permitir que componentes de
+runtime, APIs, compiladores e linguagens evoluam rapidamente, enquanto ainda fornece
+uma plataforma estável e com suporte para manter os aplicativos em execução. Várias
+versões do ASP.NET Core podem existir lado a lado no mesmo servidor.
+
+O .NET Framework é uma plataforma madura e estável, e é a escolha ideal para projetos
+que precisam de uma solução completa e confiável. . NET Core, por outro lado, é uma
+versão cross-platform, open-source e modular da plataforma .

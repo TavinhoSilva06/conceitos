@@ -7,4 +7,4 @@ comuniquem entre si.
 Ela atua como uma ponte que integra e facilita a operação e a comunicação de softwares independentes,
 como também pode ser pensada como um contrato de serviço entre duas aplicações.
 
-Referencia: skyone.solutions
+Referencia: https://skyone.solutions/blog/o-que-e-api/?utm_term=&utm_campaign=Inbound_GAds_ToFu_Search_Tr%C3%A1fego_BR_Marca_&utm_source=adwords&utm_medium=ppc&hsa_acc=5889347918&hsa_cam=20687520191&hsa_grp=156476269192&hsa_ad=681928795413&hsa_src=g&hsa_tgt=dsa-19959388920&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=CjwKCAjw_LOwBhBFEiwAmSEQAeEYi5HHlTHmasiJOurtluNcI0dMry2Heyv_bGS66uTv2yzhdcnQvBoCfvUQAvD_BwE

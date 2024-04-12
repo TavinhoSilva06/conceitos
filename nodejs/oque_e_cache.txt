@@ -1,0 +1,12 @@
+O que é cache?
+
+O cache do navegador é o espaço onde ficam armazenados arquivos estáticos
+dos sites visitados. Assim, quando você visita novamente a página, o
+carregamento é feito com mais rapidez e a navegação tem maior agilidade.
+
+O cache do navegador tem a função de ajudar o desempenho das páginas e
+melhorar a experiência do usuário. Como os dados que ficam armazenados não
+são mudados com tanta frequência, o conteúdo estático do site é carregado
+rapidamente — como imagens, arquivos de folha de estilo, JavaScript, HTML e outras informações.
+
+Referencia: https://br.hubspot.com/blog/marketing/o-que-e-cache

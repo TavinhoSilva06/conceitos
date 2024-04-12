@@ -1,0 +1,10 @@
+O que é localhost?
+
+Em redes de computadores, Localhost se refere ao computador que está executando um programa.
+O computador funciona como se fosse um servidor virtual.
+
+Neste mesmo sentido, o computador não é um objeto físico, mas
+sim um sistema que roda internamente. Considere o Localhost como uma maneira de “chamar”
+como sendo o seu computador no contexto de redes.
+
+Referencia: https://www.hostinger.com.br/tutoriais/o-que-e-localhost
