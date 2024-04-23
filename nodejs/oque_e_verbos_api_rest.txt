@@ -1,0 +1,28 @@
+O que é verbos api rest?
+
+Uma API REST (também conhecida como API RESTful) é uma interface
+de programação de aplicativos (API ou API Web) que está em
+conformidade com as restrições do estilo de arquitetura REST e
+permite a interação com serviços Web RESTful.
+
+
+Um exemplo uma API REST para gerenciar recursos que serão definidos como informações sobre carros
+
+Endpoint	   Verbo HTTP/Método	       Ação Esperada	                                            Retorno esperado (Status Code)
+/carros	           GET	                   Retorna uma lista de carros	                                200 OK
+/carros	           POST	                   Inclui um novo carro	                                        201 Created
+/carros/{id}       GET	                   Retorna um carro pelo seu id                                 200 OK
+/carros/{id}  	   PUT	                   Substitui dados do carro pelo id	                            200 OK ou 204 No Content
+/carros/{id}  	   PATCH	               Altera informações específicas de um carro pelo id	        200 OK ou 204 No Content
+/carros/{id}  	   DELETE	               Remove um carro pelo id	                                    200 OK
+
+
+Nota: Os Status Code retornados quando a operação falha podem ser:
+
+400 Bad Request
+401 Unauthorized
+404 Not Found
+405 Method Not Allowed
+500 Internal Server Error
+
+Referência: https://macoratti.net/22/06

@@ -1,2 +1,9 @@
 O que é .net core?
 
+ASP.NET é uma estrutura popular de desenvolvimento na Web para a criação de aplicativos Web em Plataforma .NET.
+
+A .NET Core é uma plataforma para desenvolvimento de aplicações criada e mantida pela Microsoft como
+um projeto de código aberto e pode ser usada em diferentes sistemas operacionais como Windows, Mac e Linux.
+
+Referência: https://dotnet.microsoft.com/pt-br/learn/aspnet/what-is-aspnet-core
+Referência: https://www.macoratti.net/18/12/netcore_netframe1.htm

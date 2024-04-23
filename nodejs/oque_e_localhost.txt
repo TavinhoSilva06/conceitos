@@ -1,4 +1,9 @@
 O que é localhost?
 
+Na computação, o termo localhost se refere à localização do sistema que está sendo usado, ou seja,
+o computador ou a "casa" do usuário. É um dispositivo loopback ao qual é atribuído o endereço IP 127.0.0.1
+no IPv4, ou::1 no IPv6, e pode ser usado por aplicações TCP/IP para testarem a comunicação
+consigo mesmas.
 
+Referencia: https://pt.wikipedia.org/wiki/Localhost
 Referencia: https://www.hostinger.com.br/tutoriais/o-que-e-localhost

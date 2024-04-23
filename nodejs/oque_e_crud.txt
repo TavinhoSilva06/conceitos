@@ -1,0 +1,10 @@
+O que é crud?
+
+CRUD é um acrônimo para as operações fundamentais em qualquer sistema que interage
+com um banco de dados: Create (Criar), Read (Ler), Update (Atualizar) e Delete (Apagar). 
+
+Essas quatro ações formam o cerne da maioria dos softwares de banco de dados, permitindo
+aos usuários criar registros novos, ler ou recuperar dados existentes, atualizar informações
+previamente armazenadas e, finalmente, excluir registros quando necessário.
+
+Referencia: https://querobolsa.com.br/revista/crud-o-que-e

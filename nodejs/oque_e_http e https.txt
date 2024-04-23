@@ -1,0 +1,22 @@
+O que é HTTP?
+
+O HTTP (Hypertext Transfer Protocol ou Protocolo de Transferência de
+Hipertexto em português) é um protocolo que especifica como será a
+comunicação entre um navegador e um servidor web, sendo um dos
+principais da World Wide Web (WWW).
+
+o protocolo utiliza uma estrutura de cliente-servidor, onde há uma comunicação 
+com mensagens individuais. A mensagem enviada pelo cliente é chamada de
+solicitação (request), enquanto a mensagem enviada pelo servidor é chamada de resposta (response).
+
+Referência: https://canaltech.com.br/internet/o-que-e-http/
+
+
+O que é HTTPS?
+
+HTTPS ou Hyper Text Transfer Protocol Secure, é um protocolo da internet que visa
+realizar a comunicação de dispositivos com os servidores do mundo todo. O protocolo
+HTTPS surgiu como uma evolução ao procolo antecessor o HTTP, a diferença entre eles
+é que o HTTPS possui a comunicação de dispositivos criptografada.
+
+Referência: https://www.hostgator.com.br/blog/o-que-e-https/
