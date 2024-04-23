@@ -4,4 +4,4 @@ Bancos de dados ou bases de dados são conjuntos de arquivos relacionados entre 
 registros sobre pessoas, lugares ou informações em geral. São coleções organizadas de dados que se
 relacionam ou não, com o objetivo de armazenar informações.
 
-Referência: Wikipédia
+Referência: https://pt.wikipedia.org/wiki/Banco_de_dados
