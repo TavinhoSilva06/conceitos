@@ -1,2 +1,7 @@
 O que são tabelas em banco de dados relacionais?
 
+No modelo de banco de dados relacional, cada "planilha" é uma tabela que armazena informações,
+representadas por colunas (atributos) e linhas (registros ou tuplas). Os atributos (colunas)
+especificam um tipo de dados, e cada registro (ou linha) contém o valor desse tipo específico.
+
+Referencia: https://www.google.com/search?q=o+que+s%C3%A3o+tabelas+em+banco+de+dados+relacionais%

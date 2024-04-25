@@ -1,2 +1,5 @@
 Quais os bancos de dados relacionais existem?
 
+MySQL, PostgreSQL, MariaDB, Microsoft SQL Server e Oracle.
+
+Referencia: https://cloud.google.com/learn/what-is-a-relational-database?hl=pt-br#:~

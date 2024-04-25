@@ -1,0 +1,13 @@
+O que é um ataque DDos?
+
+Um ataque DDos em qualquer sistema tem como objetivo sobrecarregar um servidor, esses ataques acontecem na maioria das vezes 
+em pequenos apps, sites e empresas pois essas empresas não tem um software e um sistema robusto para suportar tantas solicitações 
+de acesso ao seu sistema, pois inicialmente esse sistema não contém muitos usuários simultaneamente ou com expectativas ainda 
+baixas sobre o sucesso que o sistema pode ter.
+Fazendo assim, que esses sistemas pequenos e pouco robustos, se quebrem com os ataques DDos, um ataque de bots que tentam entrar no 
+sistema para sobrecarrega los, como se fosse um trafego em uma estrada, impedindo que siga o fluxo de usuários entrando no sistema.
+
+Mas grandes empresas usam esse método para testar se seu software está robusto e seguro para caso um ataque semelhante aconteça e 
+que o sistema aguente segurar esse ataque sem prejudicar usuários e o servidor.
+
+Referencia: https://www.cloudflare.com/pt-br/learning/ddos/what-is-a-ddos-attack/
