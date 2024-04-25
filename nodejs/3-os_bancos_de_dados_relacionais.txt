@@ -2,4 +2,31 @@ Quais os bancos de dados relacionais existem?
 
 MySQL, PostgreSQL, MariaDB, Microsoft SQL Server e Oracle.
 
+MySQL:
+MySQL é um Banco de Dados relacional (RDBMS – Relational Database Management Systems) com um
+modelo de cliente servidor.
+
+PostgreSQL:
+PostgreSQL é um gerenciador de banco de dados relacionados que otimiza muito o trabalho
+de quem precisa administrar informações nesses níveis. 
+
+MariaDB:
+MariaDB foi desenvolvida pelos mesmos desenvolvedores de MySQL no ano de 2009, ela veio como proposta substituir o MySQL, então fazer
+uma versão melhorada do próprio. MariaDB tem diversas vantagens quando é utilizada, ela é uma ferramenta de código aberto, pode 
+desenvolver criptografia em rede, aplicativo e servidor, funciona em qualquer base de dados na nuvem e tem um custo de hospedagem 
+baixo para os padrões.
+
+SQL server: 
+O SQL Server Integration Services é uma plataforma para criar soluções de integração de dados de alto desempenho,
+incluindo pacotes que fornecem processamento de ETL (extração, transformação e carregamento) para Data Warehousing.
+
+Oracle:
+A Oracle Corporation é uma empresa multinacional de tecnologia e informatica norte-americana, especializada no 
+desenvolvimento e comercialização de hardware e softwares e de banco de dados.
+
 Referencia: https://cloud.google.com/learn/what-is-a-relational-database?hl=pt-br#:~
+Referencia MySQL: https://www.hostinger.com.br/tutoriais/o-que-e-mysql
+Referencia PostgreSQL: https://rockcontent.com/br/blog/postgresql/
+Referencia MariaDB: https://coodesh.com/blog/dicionario/o-que-e-mariadb/
+Referencia: SQL server: https://www.google.com/search?q=o+que+%C3%A9+sql+server&sca_esv
+Referencia: Oracle: https://www.google.com/search?q=o+que+%C3%A9+oracle&sca_esv
