@@ -1,0 +1,8 @@
+O que é join no SQL?
+
+Um JOIN é um meio de combinar colunas de uma (auto-junção) ou mais tabelas,
+usando valores comuns a cada uma delas. O SQL padrão ANSI especifica cinco
+tipos de JOIN: INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL JOIN e CROSS JOIN.
+
+Como um caso especial, uma tabela (tabela base, visão ou tabela juntada) pode
+se juntar a si mesma em uma auto-união (self-join).

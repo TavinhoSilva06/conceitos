@@ -1,0 +1,6 @@
+
+Uma subconsulta, também conhecida como SUBQUERY ou SUBSELECT, é uma consulta embutida
+dentro de outra consulta, de forma aninhada, passando os resultados da consulta que é mais
+interna, para a consulta que é mais externa por meio de uma cláusula WHERE ou da cláusula HAVING.
+
+Referencia: https://www.google.com/search?q=o+que+%C3%A9+sub-select&oq=o+que+%C3%A9+subselect&gs_lcrp
