@@ -1,0 +1,5 @@
+Um array é um tipo especial de variável utilizado para armazenar uma 
+coleção de dados, ou seja, armazenar múltiplas informações de uma só
+vez. O ideal é que as informações armazenadas em um array façam
+partes de um mesmo contexto, como por exemplo, uma lista de carros,
+uma lista de produtos, ou UFs de um estado e etc.

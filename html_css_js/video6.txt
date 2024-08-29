@@ -1,0 +1,13 @@
+Como a Internet chega na minha casa?
+
+A origem da internet ocorreu no meio da guerra fria (guerra de influencia e destacada pela corrida de tecnologias entre EUA e URSS), foi
+criada pelos americanos com o objetivo de proteger seus dados de espionagem, mas que eventualmente foi evoluida para internet que
+conhecemos hoje.
+
+Backpones são dispositvos que, deistrubuem informações com protocolo de TCP/IP, o que indica para onde os dados devem ir.
+
+Os provedores de acesso à Internet (ISP) são empresas que contratam conexões com os backbones. Eles são os intermediários
+intermediários entre os backbones e nossas casas.
+
+Os ISPs distribuem a conexão para os provedores de serviço, como empresas de telefonia, TV a cabo ou fibra óptica.
+Esses provedores, por sua vez, nos fornecem acesso à Internet em nossas residências. (fonte: Copilot)
