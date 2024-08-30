@@ -1,0 +1,26 @@
+Como a internet funciona?
+
+Bits e Bytes
+
+Bit: O menor bloco de informação, representado por 0 ou 1. (números binários)
+Byte: Um grupo de 8 bits. É a unidade básica para representar caracteres, como letras e números.
+Por exemplo, a letra “A” é representada por um byte.
+
+Múltiplos: Kilo, mega, giga e tera são prefixos que indicam potências de 2. Por exemplo, 1 kilobyte (KB) é 2^10 bytes. (fonte:Copilot)
+
+
+DNS (Domain Name System)
+
+O DNS traduz nomes de domínio (como “google.com”) em endereços IP (como “172.217.12.14”).
+É como uma lista telefônica da Internet.
+
+O DNS permite que nós coloquemos nomes ao invés de números na hora de pesquisar algo na internet, assim
+ficando fácil de memorizar.
+
+
+Endereço de IP
+
+Cada dispositivo conectado à Internet tem um endereço IP exclusivo. Uma maneira de localizar o dispositivo.
+(Parecido também como um documento RG do dispositivo)
+
+O IP permite que os dispositivos se comuniquem, troquem informações, se localizem e etc.
