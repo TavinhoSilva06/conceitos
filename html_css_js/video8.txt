@@ -1,0 +1,8 @@
+O que é domínio e hospedagem?
+
+Domínio: Um domínio é o endereço eletrônico que as pessoas usam para encontrar seu site na internet. 
+Por exemplo, “google.com” é um domínio.
+
+Hospedagem: A hospedagem de sites é o serviço que permite que o conteúdo do seu site fique acessível para
+qualquer pessoa na internet. Quando você compra um plano de hospedagem, está alugando espaço em um
+ervidor físico para armazenar seus dados e arquivos. Sem hospedagem, seu site não pode ser visto online.

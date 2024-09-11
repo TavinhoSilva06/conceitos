@@ -1,0 +1,13 @@
+Front-end, Back-end e Full stack 
+
+Front end: Client side, que se especifica em dar uma boa experiência para o usuário do site, se preocupando 
+com a parte visual e interativa do site.
+
+
+Back end: Server side, que se preocupa com as parte mais técnicas do código, de maneira que o código entre em 
+consenso com o servidor da melhor maneira possível, usando linguagens de programação como:
+
+PHP, JavaScript, Phyton, C#, Java e etc.
+
+
+Full steack: 

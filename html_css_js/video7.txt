@@ -4,7 +4,7 @@ Bits e Bytes
 
 Bit: O menor bloco de informação, representado por 0 ou 1. (números binários)
 Byte: Um grupo de 8 bits. É a unidade básica para representar caracteres, como letras e números.
-Por exemplo, a letra “A” é representada por um byte.
+Por exemplo, a letra “A” é representada por um byte. 
 
 Múltiplos: Kilo, mega, giga e tera são prefixos que indicam potências de 2. Por exemplo, 1 kilobyte (KB) é 2^10 bytes. (fonte:Copilot)
 

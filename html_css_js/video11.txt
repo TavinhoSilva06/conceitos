@@ -1,0 +1,7 @@
+Instalando todas as ferramentas
+
+O vídeo basicamente se resume a instalação do Google Chrome e Visual Code, onde ele explica
+detalhadamente como instalar e configurar cada um deles para o ínicio dos códigos e pesquisas no Google Chrome e Visual Code.
+
+Onde no Visual Code ele deixa configuração de lingua portuguesa e salvar automaticamente.
+E no Google Chrome ele apenas configura como navegador padrão do Windows (obs: Versão do Windows é o 10)

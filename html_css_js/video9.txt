@@ -1,0 +1,19 @@
+Sigla HTML: HypertText Markup Language
+
+Onde vai estar o conteúdo do seu site, com textos, imagens, títulos e variáveis que podem ser usadas no CSS e JavaScript para outras 
+funções.
+
+
+Sigla CSS: Cascading Style Sheets
+
+Onde vai estar o design do site, seja tamahho de caractéres, imagens, cores e etc. 
+CSS sempre será envolvido na parte visual do site, onde também se quisermos usar o CSS no HTML, precisamos usar a tag <style>.
+Basicamente nosso FRONT END do nosso site.
+
+
+JavaScript:
+
+Onde estará as funções do site, como animações, menus, estilo de botões, o que cada opção fará ao ser clicada ou adicionada e etc.
+Basicamente o BACK END do nosso site.
+
+
