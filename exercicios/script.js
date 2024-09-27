@@ -14,6 +14,7 @@ let validarFormulario = () => {
         input.focus();
     } else {
         msgErro.innerHTML = ""; // Limpando a mensagem de erro
+        posts.innerHTML += "<li>" +input.value+ "</li>";
         aceitarDados();
     }
 };
