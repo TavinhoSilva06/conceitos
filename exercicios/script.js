@@ -3,6 +3,7 @@ let input = document.getElementById("input");
 let msgErro = document.getElementById("msgErro");
 let posts = document.getElementById("posts");
 
+
 form.addEventListener("submit", (event) => {
     event.preventDefault(); 
     validarFormulario();
@@ -24,3 +25,8 @@ let aceitarDados = () => {
     dados["Valor de Entrada"] = input.value;
     console.log(dados);
 };
+
+let limpardados = () => {
+    posts.innerHTML = null;
+    console.log("reset");
+}
