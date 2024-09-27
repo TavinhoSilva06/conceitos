@@ -15,7 +15,7 @@ let validarFormulario = () => {
         input.focus();
     } else {
         msgErro.innerHTML = ""; // Limpando a mensagem de erro
-        posts.innerHTML += "<li>" +input.value+ "</li>";
+        posts.innerHTML += "<li>" +input.value+"<button onclick='limparlinha()'>Deletar</button>"+ "</li>";
         aceitarDados();
     }
 };
@@ -29,4 +29,8 @@ let aceitarDados = () => {
 let limpardados = () => {
     posts.innerHTML = null;
     console.log("reset");
+}
+
+let limparlinha = () => {
+    console.log("deletando linha")
 }
