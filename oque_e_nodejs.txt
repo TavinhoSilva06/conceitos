@@ -10,3 +10,14 @@ Referencia: https://www.opus-software.com.br/insights/node-js/
 Dicionário:
 Pesquisar o que é standalone
 pesquisar o que é server-side
+
+O que é Node.js?
+
+Node.js é um ambiente de execução JavaScript que permite executar aplicações desenvolvidas com a linguagem
+de forma autônoma, sem depender de um navegador. Com ele, é possível criar praticamente qualquer tipo de 
+aplicações web, desde servidores para sites estáticos e dinâmicos, até APIs e sistemas baseados em microserviços.
+
+A principal característica do Node.js é sua execução ser single-thread, ou seja, os recursos computacionais são alocados  
+apenas uma vez pelo tempo que a aplicação estiver sendo executada. Aplicações multi-thread, omo as criadas com PHP, por exemplo 
+requerem a criação de uma thread a cada nova requisição, e ela não é executada enquanto a anterior não for finalizada.
+
