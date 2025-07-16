@@ -1,0 +1,32 @@
+O que é um Spring Boot?
+
+Spring Boot é um projeto da Spring Source que teve seu lançamento em 2014
+como uma ferramente de Software Livre, o que significa que ele é mantido de
+maneira colaborativa, com o código disponível para todas as pessoas que quiserem usar ou indicar alterações.
+
+3 Principais recursos do Spring Boot?
+
+Autoconfiguração: aplicações Spring Boot, quando inicializadas, presentam dependências predefinidas, evitando configurações
+manuais. Assim, elas realizam a configuração automática de todo o ecossistema Spring do projeto, reduzindo erros humanos
+e acelerando o desenvolvimento.
+
+Abordagem opinativa: o Spring Boot seleciona e configura dependências com base nas necessidades do projeto, utilizando os
+chamados Spring Starters, que nada mais são que pacotes pré-configurados que já vem com a dependência ao ser instalada.
+
+Mais de 30 Spring Starters estão disponíveis, cobrindo diversos casos de uso com configurações padrão.
+Vão de configurações de banco de dados até a parte de segurança da aplicação.
+
+Aplicativos independentes: é possível criar aplicativos autônomos, que podem ser executados sem um servidor web externo, integrando
+um servidor da web durante o processo de inicialização.
+
+
+Principais usos do Spring Boot.
+
+APIs RESTful: com elas criamos serviços REST que lidam com operações CRUD (Create, Read, Update, Delete) em dados
+armazenados em bancos de dados.
+
+Arquitetura de Microsserviços: por sua vez, criam um sistema no qual cada funcionalidade (como autenticação, gestão de usuários, etc.) 
+é um serviço separado, facilitando a manutenção e escalabilidade.
+
+Aplicações empresariais: tipo de aplicações que focam na gestão empresarial, conhecidas como Enterprise resource planning (ERPs), em
+tradução livre, "Sistema integrado de gestão empresarial". São geralmente aplicados em sistemas bancários, e-commerce, entre outros.

@@ -1,0 +1,11 @@
+O que é uma framework em programação e engenharia?
+
+Em engenharia e programação de software, uma framework é uma coleção de componentes de software reutilizáveis que tornam
+mais eficiente o desenvolvimento de novas aplicações. A reutilização do desenvolvimento e da pesquisa existentes é um princípio
+essencial em todos os campos da engenharia. Por exemplo, engenheiros elétricos usam componentes eletrônicos existentes para
+criar novos dispositivos. Fabricantes de componentes seguem padrões e especificações predeterminados para garantir a usabilidade
+dos componentes. Da mesma forma, as frameworks de software contêm módulos de código reutilizáveis com base em padrões e
+protocolos de software específicos. Frameworks também podem definir e aplicar determinadas regras de arquitetura de software ou
+processos de negócios, para que novas aplicações possam ser desenvolvidas de maneira padronizada.
+
+Referência: https://aws.amazon.com/pt/what-is/framework/
