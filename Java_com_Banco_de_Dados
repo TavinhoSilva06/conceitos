@@ -1,0 +1,16 @@
+Integração de java com Banco de Dados não relacionais.
+
+Bancos NoSQL como MongoDB, Cassandra e Redis são usados quando os dados não
+têm uma estrutura fixa ou quando há necessidade de alta escalabilidade.
+
+- Por que usar NoSQL com Java?
+
+Java tem bibliotecas e frameworks que facilitam essa integração. Por exemplo, o
+Spring Data MongoDB permite mapear documentos do MongoDB diretamente em
+objetos Java, como se fosse um banco relacional.
+
+- Casos de uso em empresas:
+
+Redes sociais usam NoSQL para armazenar posts, comentários e curtidas, que têm estrutura variável.
+
+E-commerces usam para armazenar catálogos de produtos, que mudam com frequência.

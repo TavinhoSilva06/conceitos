@@ -1,0 +1,26 @@
+Arquitetura de Microservicos com Spring Boot
+
+A arquitetura de microserviços é uma abordagem onde o sistema é dividido em
+pequenos serviços independentes, cada um responsável por uma funcionalidade
+específica. Em Java, o Spring Boot é a principal ferramenta usada para criar esses serviços.
+
+- Por que Spring Boot?
+
+Ele simplifica a configuração e o desenvolvimento de aplicações Java. Com ele, é
+possível criar serviços RESTful rapidamente, com integração fácil a bancos de dados, segurança e testes.
+
+- Como empresas usam isso?
+
+Imagine uma plataforma de e-commerce: um microserviço para o carrinho, outro
+para pagamentos, outro para usuários. Cada um pode ser desenvolvido, testado e
+implantado separadamente. Isso permite que equipes diferentes trabalhem em
+paralelo e que atualizações sejam feitas sem afetar o sistema inteiro.
+
+- Infraestrutura comum:
+
+Docker: empacota cada microserviço em um container.
+
+Kubernetes: gerencia esses containers, garantindo escalabilidade e alta disponibilidade.
+
+Spring Cloud: oferece ferramentas para comunicação entre serviços, descoberta de serviços,
+configuração centralizada, etc.
