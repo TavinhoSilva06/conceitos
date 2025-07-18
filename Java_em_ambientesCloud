@@ -1,0 +1,28 @@
+Java em ambientes Cloud (AWS, Azure, GCP)
+
+Java pode ser usado em nuvem pública, privada ou híbrida, mas exige atenção especial
+por causa do tempo de inicialização e consumo de memória.
+
+- Modelos de uso:
+
+Containers: Java roda bem em Docker, e pode ser orquestrado em Kubernetes.
+
+Paas: plataformas como AWS Elastic Beanstalk u GCP App Engine permitem
+deploy automático de aplicações Java.
+
+Serverless: é possível usar Java em funções como AWS Lambda, mas o tempo
+de "cold start" (inicialização lenta) pode ser um problema.
+
+- Ferramentas úteis:
+
+Spring Cloud: facilita integração com serviços distribuídos (configuração,
+descoberta, balanceamento).
+
+Micrometer + Prometheus: para monitoramento.
+
+Terraform: para provisionamento de infraestrutura.
+
+- Empresas que usam:
+
+Grandes corporações e startups usam Java em nuvem para escalar aplicações
+globalmente, reduzir custos com infraestrutura e acelerar o tempo de entrega.

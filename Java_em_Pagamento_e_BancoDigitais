@@ -1,0 +1,26 @@
+Java em Plataforma de Pagamento e Bancos Digiais
+
+Java é uma escolha popular para sistemas financeiros por sua confiabilidade, segurança e escalabilidade.
+
+- Por que Java é usado em fintechs e bancos?
+
+Forte tipagem e controle de erros.
+
+Suporte a transações seguras
+
+Ecossistema maduro com bibliotecas para criptografia, autenticação,
+e integração com APIs bancárias.
+
+- Exemplos de uso:
+
+Nubank usa Java para serviços críticos como processamento de pagamentos e controle de crédito.
+
+PicPay e Mercado Pago usam Java para lidar com milhões de transações simultâneas.
+
+- Tecnologias envolvidas:
+
+Spring Boot para APIs REST.
+
+Apache Kafka para comunicação assíncrona entre serviços.
+
+Hibernate para persistência em bancos relacionais.

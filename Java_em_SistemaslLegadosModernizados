@@ -1,0 +1,28 @@
+Java em Sistemas Legados e Modernização
+
+Muitas empresas têm sistemas antigos escritos em Java, especialmente versões como
+Java 6 ou 7. Esses sistemas ainda funcionam, mas são difíceis de manter e não
+aproveitam os recursos modernos da linguagem.
+
+- Problemas comuns em sistemas legados:
+
+Código monolítico e dificl de escalar.
+
+Falta de testes automatizados
+
+Depedência de servidores físicos ou tecnologias obsoletas.
+
+- Como modernizar:
+
+Atualizar para versões recentes do Java (Java 17 ou superior)
+
+Refatorar o código para usar boas práticas (como programação funcional com lambdas e streams)
+
+Migrar para arquitetura de microserviços.
+
+Usar ferramentas como JHipster (gera aplicações modernas com Spring Boot e Angular/React) ou Quarkus (framework leve para aplicações Java em cloud).
+
+- Exemplo real:
+
+Bancos tradicionais estão migrando seus sistemas de crédito e cobrança para
+microserviços em Java, com deploy em nuvem e integração com APIs modernas.
