@@ -1,0 +1,5 @@
+O que é Request e Response?
+
+Request é a requisição que o usuário faz ao sistema.
+
+Response é o que o sistema devolve de acordo com a requisição feita pelo usuário.

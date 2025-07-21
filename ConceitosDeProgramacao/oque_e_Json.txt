@@ -1,0 +1,6 @@
+O que é Json?
+
+JSON, ou JavaScript Object Notation, é um formato leve e de fácil leitura para
+troca de dados entre sistemas. É amplamente utilizado em aplicações web,
+APIs e bancos de dados para representar informações de forma estruturada,
+sendo fácil tanto para humanos quanto para máquinas entenderem. 
