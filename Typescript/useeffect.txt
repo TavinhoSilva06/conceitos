@@ -1,0 +1,4 @@
+O useEffect é um recurso do React usado para executar tarefas que afetam o exterior do componente 
+(efeitos colaterais), como buscar dados em uma API ou alterar o título da página. 
+No TypeScript, a função principal continua a mesma, mas você ganha a vantagem de tipar o estado, os parâmetros 
+e as funções chamadas dentro dele, evitando erros de dados inesperados.

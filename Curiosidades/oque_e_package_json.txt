@@ -1,0 +1,4 @@
+O package.json é um arquivo de configuração obrigatório em projetos JavaScript e Node.js.
+Ele funciona como a "certidão de nascimento" ou "receita" do seu projeto, contendo os metadados
+(como nome e versão), a lista de ferramentas externas que ele precisa para funcionar 
+(dependências) e atalhos de teclado para executá-lo.

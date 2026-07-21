@@ -1,0 +1,16 @@
+Um recurso para criar um tipo novo a partir de um tipo existente. Ele transforma as regras das propriedades.
+
+const numbers: number[] = [1, 2, 3, 4, 5];
+
+// Map to double each number
+const doubled: number[] = numbers.map(num => num * 2);
+
+// Map to transform to strings
+const strings: string[] = numbers.map(num => `Item ${num}`);
+
+// Map with array destructuring
+const pairs: [number, string][] = numbers.map(num => [num, `Value ${num}`]);
+
+console.log(doubled);   // [2, 4, 6, 8, 10]
+//console.log(strings);   // ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5"]
+//console.log(pairs);     // [[1, "Value 1"], [2, "Value 2"], ...]

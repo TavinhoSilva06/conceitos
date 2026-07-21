@@ -1,0 +1,2 @@
+O onChange no React é uma função que monitora e responde a qualquer alteração em um elemento, como digitar
+ em uma caixa de texto ou marcar uma opção.

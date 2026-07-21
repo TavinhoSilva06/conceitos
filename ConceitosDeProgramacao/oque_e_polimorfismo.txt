@@ -1,0 +1,8 @@
+O que é polimorfismo na Programação Orientada a Objetos (POO)? 
+
+polimorfismo é um dos pilares da POO, onde classes derivadas (filhos) de uma superclasse comum (pai) podem
+implementar métodos com o mesmo nome, mas com comportamentos específicos.
+
+Exemplo: Uma classe "Animal" tem o método fazerSom(). As subclasses
+Cachorro" e "Gato" herdam esse método, mas o Cachorro implementa como
+"Latir" e o Gato como "Miar".

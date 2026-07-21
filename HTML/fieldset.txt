@@ -1,0 +1,3 @@
+A tag <fieldset> em HTML agrupa elementos ou campos relacionados dentro de um formulário. 
+Ela desenha uma borda visual ao redor dos itens e, junto com a tag <legend>, organiza os
+dados em seções, facilitando o preenchimento e ajudando leitores de tela na acessibilidade.

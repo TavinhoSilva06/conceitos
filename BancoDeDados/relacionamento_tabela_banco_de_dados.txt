@@ -1,0 +1,15 @@
+Relacionamento de tabelas em banco de dados 
+
+Relacionamentos em bancos de dados relacionais são conexões entre tabelas que
+organizam dados, evitam redundância e garantem a integridade referencial. Eles
+conectam a chave primária (PK) de uma tabela a uma chave estrangeira (FK) em outra,
+facilitando a consulta de informações combinadas.
+
+Principais tipos de Relacionamentos:
+
+Um para Um (1:1): Cada registro na tabela A está associado a apenas um registro na tabela B (ex: Funcionário e CPF).
+
+Um para Muitos (1:N): Um registro na tabela A pode se relacionar a vários registros na tabela B, mas o contrário não é verdade (ex: Cliente e Pedidos).
+
+Muitos para Muitos (N:M): Vários registros em uma tabela se relacionam a vários na outra. 
+Requer uma tabela intermediária (tabela associativa) para vincular as chaves primárias de ambas (ex: Alunos e Cursos). 

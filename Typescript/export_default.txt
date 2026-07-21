@@ -1,0 +1,11 @@
+O export default indica que um arquivo possui um componente, função ou classe principal. 
+Ele permite exportar apenas uma coisa por arquivo (como uma classe, função ou objeto), facilitando a importação 
+em outros lugares já que não exige o uso de chaves {}.
+
+Característica      export default                   export               (Nomeado)
+
+Quantidade por      Apenas 1                         Várias
+arquivo
+
+Sintaxe de          import NomeQualquer from         import { nomeExato } from 
+Importação          './arquivo'                      './arquivo'
