@@ -1,0 +1,24 @@
+O UserDetails é uma interface central do Spring Security Reference que guarda as
+informações essenciais de um usuário. Ela serve como um elo entre o seu banco de dados
+Spring Security Reference que guarda as informações essenciais de um usuário. Ela serve como um elo 
+entre o seu banco de dados e o motor de segurança do framework, fornecendo dados como nome de usuário, senha 
+e permissões (authorities).
+
+Principais Métodos da Interface
+
+O contrato do UserDetails exige que você implemente métodos que definem o estado 
+e as credenciais da conta:
+
+- getUsername(): Retorna o nome de usuário ou e-mail usado na identificação.
+
+- getPassword(): Retorna a senha (geralmente criptografada).
+
+- getAuthorities(): Retorna a lista de papéis ou permissões (GrantedAuthority).
+
+- isAccountNonExpired(): Indica se a conta do usuário venceu.
+
+- isAccountNonLocked(): Indica se o usuário está bloqueado.
+
+- isCredentialsNonExpired(): Indica se a senha venceu.
+
+- isEnabled(): Indica se o usuário está ativo no sistema.

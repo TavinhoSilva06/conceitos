@@ -1,0 +1,29 @@
+O SecurityContextRepository é uma interface do Spring Security responsável por persistir e recuperar 
+o SecurityContext entre requisições HTTP.
+
+Requisição HTTP
+      ↓
+SecurityContextRepository
+      ↓
+SecurityContext
+      ↓
+Authentication
+      ↓
+getPrincipal()
+      ↓
+Usuário autenticado
+
+O SecurityContext contém a informação de autenticação atual, incluindo o Authentication. A própria
+documentação oficial define SecurityContext como as informações de segurança associadas à execução atual.
+
+A interface possui principalmente três responsabilidades:
+
+Método	                         Função
+loadDeferredContext()	         Recupera o SecurityContext da requisição
+saveContext()	                 Salva o SecurityContext ao final da requisição
+containsContext()	             Verifica se existe um SecurityContext para aquela requisição
+
+
+Referências: https://docs.spring.io/spring-security/reference/7.1/api/java/org/springframework/security/web/context/SecurityContextRepository.html?utm_source=chatgpt.com
+
+https://docs.spring.io/spring-security/reference/servlet/authentication/session-management.html?utm_source=chatgpt.com 

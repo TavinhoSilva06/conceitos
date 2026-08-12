@@ -1,0 +1,48 @@
+getPrincipal() no contexto de Spring Security, ele serve para 
+obter a identidade do usuário autenticado ( conteúdo dentro do authentication ).
+
+
+Exemplo:
+
+Authentication authentication =
+        SecurityContextHolder.getContext().getAuthentication();
+
+Object principal = authentication.getPrincipal();
+
+------------------------------------------------------------------------------------------------
+
+getPrincipal() retorna quem está autenticado naquele momento.
+
+Dependendo da configuração do Spring Security, esse retorno pode ser:
+
+- uma String → normalmente o username;
+- um objeto UserDetails;
+- uma implementação personalizada do seu usuário.
+
+
+Exemplo:
+
+UserDetails usuario = (UserDetails) authentication.getPrincipal();
+
+System.out.println(usuario.getUsername());
+
+-----------------------------------------------------------------------------------------------
+
+Então, em uma API Spring Boot, algo como:
+
+Exemplos: 
+
+Authentication authentication =
+        SecurityContextHolder.getContext().getAuthentication();
+
+UserDetails user =
+        (UserDetails) authentication.getPrincipal();
+
+
+significa basicamente:
+
+"Pegue o usuário que o Spring Security identificou como autenticado."
+
+-----------------------------------------------------------------------------------------------
+
+Referência: https://docs.spring.io/spring-security/site/docs/current/api/org/springframework/security/core/Authentication.html?utm_source=chatgpt.com

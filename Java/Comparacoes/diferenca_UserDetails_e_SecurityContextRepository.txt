@@ -1,0 +1,37 @@
+UserDetails representa os dados do usuário; SecurityContextRepository cuida de recuperar/persistir 
+o contexto de segurança (SecurityContext) que contém a autenticação (Authentication).
+
+SecurityContextRepository
+          │
+          │ recupera/persiste
+          ▼
+   SecurityContext
+          │
+          │ contém
+          ▼
+   Authentication
+          │
+          │ contém
+          ▼
+      Principal
+          │
+          │ pode ser
+          ▼
+     UserDetails
+
+
+| Componente                  | Responsabilidade                                           |
+| --------------------------- | ---------------------------------------------------------- |
+| `UserDetails`               | **Representa o usuário**                                   |
+| `UserDetailsService`        | **Busca/carrega o usuário**                                |
+| `Authentication`            | **Representa a autenticação**                              |
+| `SecurityContext`           | **Mantém a autenticação atual**                            |
+| `SecurityContextRepository` | **Recupera/persiste o `SecurityContext`**                  |
+| `SecurityContextHolder`     | **Permite acessar o `SecurityContext` durante a execução** |
+| `getPrincipal()`            | **Obtém a identidade autenticada**                         |
+
+
+Referências: 
+https://docs.spring.io/spring-security/reference/api/java/org/springframework/security/core/Authentication.html?utm_source=chatgpt.com
+https://docs.spring.io/spring-security/reference/servlet/authentication/passwords/storage.html?utm_source=chatgpt.com
+https://docs.spring.io/spring-security/reference/api/java/org/springframework/security/core/context/SecurityContextImpl.html?utm_source=chatgpt.com
