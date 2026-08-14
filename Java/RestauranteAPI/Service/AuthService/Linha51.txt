@@ -1,0 +1,15 @@
+1. authentication.getPrincipal() — Obtém o "principal" (a entidade autenticada) do objeto Authentication. No Spring Security, o principal é o UserDetails que contém as informações do usuário logado.
+2. (ClienteUserDetails) — É um cast (conversão de tipo) necessário porque getPrincipal() retorna um Object genérico. Aqui estamos informando ao Java: "eu sei que este object é do tipo ClienteUserDetails, converta-o para esse tipo".
+3. Resultado — A variável userDetails recebe um objeto ClienteUserDetails com as informações do cliente autenticado, que é então usado para extrair id, nome, email e papel nos próximos passos.
+
+Em resumo: É um padrão padrão do Spring Security para recuperar informações customizadas do usuário logado quando você tem um UserDetails customizado (no seu caso, ClienteUserDetails em vez do User genérico do Spring).
+
+Referências:
+1. Authentication Interface (que contém o método getPrincipal())
+https://docs.spring.io/spring-security/reference/servlet/authentication/architecture.html#servlet-authentication-authentication
+
+2. UserDetails Interface (a interface que ClienteUserDetails implementa)
+https://docs.spring.io/spring-security/reference/servlet/authentication/passwords/user-details.html
+
+3. Custom UserDetailsService (como criar um UserDetails customizado como ClienteUserDetails)
+https://docs.spring.io/spring-security/reference/servlet/authentication/passwords/user-details-service.html
