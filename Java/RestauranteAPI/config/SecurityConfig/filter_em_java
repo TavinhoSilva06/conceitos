@@ -1,0 +1,106 @@
+O que é filter() em Java (baseado no SecurityConfig.java)                                                                                                                                  
+                                                                                                                                                                                             
+  No seu SecurityConfig.java, o conceito de filtro está implementado na linha 26 com SecurityFilterChain. 
+  É um filtro de requisições HTTP que decide quais requisições são permitidas e quais são bloqueadas.                                                                                                                                                                            
+                                                                                                                                                                                             
+  Como funciona o filtro no seu projeto (linhas 29-32):                                                                                                                                      
+                                                                                                                                                                                             
+  .authorizeHttpRequests(auth -> auth                                                                                                                                                        
+      .requestMatchers("/clientes", "/auth/login").permitAll()  // ✅ PERMITE SEM AUTENTICAÇÃO                                                                                               
+      .anyRequest().authenticated()                              // ❌ BLOQUEIA SEM AUTENTICAÇÃO                                                                                             
+  )
+
+  
+  Isso é exatamente como um filter() funciona:                                                                                                                                               
+                                                                                                                                                                                             
+  Requisição HTTP chega                                                                                                                                                                      
+          ↓                                                                                                                                                                                  
+  SecurityFilterChain verifica (filtra)                                                                                                                                                      
+          ↓                                                                                                                                                                                  
+  ┌─────────────────────────────────────┐                                                                                                                                                    
+  │ É para /clientes ou /auth/login?    │                                                                                                                                                    
+  │    SIM → PERMITE (passa pelo filtro)│                                                                                                                                                    
+  │    NÃO → REQUER AUTENTICAÇÃO        │                                                                                                                                                    
+  └─────────────────────────────────────┘                                                                                                                                                    
+          ↓                                                                                                                                                                                  
+  Resposta (200 OK ou 403 Forbidden)                                                                                                                                                         
+                                                                                                                                                                                             
+  Analogia com .filter() de Streams:                                                                                                                                                         
+                                                                                                                                                                                             
+  // SecurityConfig filtra requisições HTTP assim:                                                                                                                                           
+  // (Pseudocódigo para entender o conceito)                                                                                                                                                 
+                                                                                                                                                                                             
+  List<HttpRequest> requisicoesChegando = ... // requisições do cliente                                                                                                                      
+                                                                                                                                                                                             
+  List<HttpRequest> requisicoesPermitidas = requisicoesChegando.stream()                                                                                                                     
+      .filter(req -> "/clientes".equals(req.getPath()) || "/auth/login".equals(req.getPath()))                                                                                               
+      // OU                                                                                                                                                                                  
+      .filter(req -> req.isAuthenticated())                                                                                                                                                  
+      .collect(Collectors.toList());
+
+ 
+ Exemplo prático com seu código:                                                                                                                                                            
+                                                                                                                                                                                             
+  Quando você faz uma requisição:                                                                                                                                                            
+                                                                                                                                                                                             
+  # ✅ PASSA ppelo filtro (permitAll)                                                                                                                                                         
+  GET /clientes                                                                                                                                                                              
+  POST /auth/login                                                                                                                                                                           
+                                                                                                                                                                                             
+  # ❌ BLOQUEADO pelo fiiltro (requer autenticação)                                                                                                                                           
+  GET /auth/me          # 403 Forbidden (seu problema anterior!)                                                                                                                             
+  POST /auth/logout                                                                                                                                                                          
+  GET /qualquer-outro-endpoint 
+
+                                                                                                                                                                                             
+  Se você quisesse adicionar mais filtros (como .filter() de Streams):                                                                                                                       
+                                                                                                                                                                                             
+  @Bean                                                                                                                                                                                      
+  public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {                                                                                                       
+      http                                                                                                                                                                                   
+              .csrf(csrf -> csrf.disable())                                                                                                                                                  
+              .authorizeHttpRequests(auth -> auth                                                                                                                                            
+                      .requestMatchers("/clientes", "/auth/login").permitAll()      // Filtro 1                                                                                              
+                      .requestMatchers("/admin/**").hasRole("ADMIN")                // Filtro 2                                                                                              
+                      .requestMatchers("/user/**").hasAnyRole("USER", "ADMIN")      // Filtro 3                                                                                              
+                      .anyRequest().authenticated()                                  // Filtro 4 (fallback)                                                                                  
+              )                                                                                                                                                                              
+              .logout(logout -> logout                                                                                                                                                       
+                      .logoutUrl("/auth/logout")                                                                                                                                             
+                      .deleteCookies("JSESSIONID")                                                                                                                                           
+                      .invalidateHttpSession(true)                                                                                                                                           
+                      .clearAuthentication(true)                                                                                                                                             
+              );                                                                                                                                                                             
+      return http.build();                                                                                                                                                                   
+  }
+
+ 
+  Cada linha filtra as requisições passando apenas as que correspondem à condição.                                                                                                           
+                                                                                                                                                                                             
+  Resumo - Por que é chamado SecurityFilterChain?                                                                                                                                            
+                                                                                                                                                                                             
+  É uma cadeia de filtros (chain) que filtra/valida cada requisição HTTP antes de passar:                                                                                                    
+                                                                                                                                                                                             
+  1. Filtro 1: Verifica se é uma URL pública → passa ✅                                                                                                                                      
+  2. Filtro 2: Verifica autenticação → bloqueia ❌                                                                                                                                           
+  3. Filtro 3: Verifica autorização (papéis) → passa/bloqueia                                                                                                                                
+  4. Filtro 4: Aplica logout → limpa sessão
+
+
+  ---
+Referências Oficiais:
+
+1. SecurityFilterChain API Documentation
+  - https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/stream/Stream.html#filter(java.util.function.Predicate)
+
+2. Spring Security - Authorization
+  - https://docs.spring.io/spring-security/docs/current/reference/html5/#servlet-authorization
+
+3. Spring Security - HttpSecurity.authorizeHttpRequests()
+  - https://docs.spring.io/spring-security/site/docs/current/api/org/springframework/security/config/annotation/web/builders/HttpSecurity.html#authorizeHttpRequests(org.springframework.security.config.Customizer)
+
+4. Predicate Interface (lógica de filtro)
+  - https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Predicate.html
+
+5. Java Lambda Expressions
+  - https://docs.oracle.com/javase/specs/jls/se21/html/jls-15.html#jls-15.27                                                       

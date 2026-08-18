@@ -1,0 +1,58 @@
+ que é Regex em Java?                                                                                                                                                                     
+                                                                                                                                                                                             
+  Regex (Regular Expression) é um padrão de texto usado para validar, buscar, substituir ou processar strings. 
+  Em Java, você usa a classe Pattern (do pacote java.util.regex) para compilar  um padrão e depois usá-lo.                                                                                                                                                                 
+                                                                                                                                                                                             
+  Seu regex específico:                                                                                                                                                                      
+                                                                                                                                                                                             
+  private static final Pattern EMAIL_PATTERN =                                                                                                                                               
+          Pattern.compile("^[A-Za-z0-9+_.-]+@(.+)$");                                                                                                                                        
+                                                                                                                                                                                             
+  Ele valida se uma string é um email válido. Vamos quebrar cada parte:                                                                                                                      
+                                                                                                                                                                                             
+  ┌──────────────────┬───────────────────────────────────────────────────────────────────────────────────┐                                                                                   
+  │      Padrão      │                                    Significado                                    │                                                                                   
+  ├──────────────────┼───────────────────────────────────────────────────────────────────────────────────┤                                                                                   
+  │ ^                │ Início da string                                                                  │                                                                                   
+  ├──────────────────┼───────────────────────────────────────────────────────────────────────────────────┤                                                                                   
+  │ [A-Za-z0-9+_.-]+ │ Um ou mais caracteres: letras (A-Z, a-z), números (0-9), ou símbolos (+, _, ., -) │                                                                                   
+  ├──────────────────┼───────────────────────────────────────────────────────────────────────────────────┤                                                                                   
+  │ @                │ O símbolo @ (literal)                                                             │                                                                                   
+  ├──────────────────┼───────────────────────────────────────────────────────────────────────────────────┤                                                                                   
+  │ (.+)             │ Um ou mais caracteres de qualquer tipo (o domínio)                                │                                                                                   
+  ├──────────────────┼───────────────────────────────────────────────────────────────────────────────────┤                                                                                   
+  │ $                │ Fim da string                                                                     │                                                                                   
+  └──────────────────┴───────────────────────────────────────────────────────────────────────────────────┘
+
+  Exemplo:                                                                                                                                                                                   
+  - ✅ user@example.com — válido                                                                                                                                                             
+  - ✅ john.doe+tag@dommain.co.uk — válido                                                                                                                                                    
+  - ❌ @example.com — inválidoo (sem caracteres antes de @)                                                                                                                                   
+  - ❌ user@ — inválido (sem domínio)                                                                                                                                                        
+                                                                                                                                                                                             
+  Como é usado no seu código (linha 56):                                                                                                                                                     
+                                                                                                                                                                                             
+  if (!EMAIL_PATTERN.matcher(request.email()).matches()) {                                                                                                                                   
+      throw new ValidacaoException("E-mail inválido");                                                                                                                                       
+  }                                                                                                                                                                                          
+                                                                                                                                                                                             
+  1. .matcher() cria um validador para a string                                                                                                                                              
+  2. .matches() retorna true se a string bate com o padrão                                                                                                                                   
+                                                                                                                                                                                             
+  ---                                                                                                                                                                                        
+  Referências Oficiais de Java:                                                                                                                                                              
+                                                                                                                                                                                             
+  1. Java Pattern API (documentação oficial)                                                                                                                                                 
+    - https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/regex/Pattern.html
+
+  2. Java Regex Tutorial (Oracle)                                                                                                                                                            
+    - https://docs.oracle.com/javase/tutorial/i18n/text/regex.html
+
+  3. Matcher API (para usar o padrão)                                                                                                                                                        
+    - https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/regex/Matcher.html
+                                                                                                  
+  4. JavaDoc java.util.regex (visão geral)                                                                                                                                                   
+    - https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/regex/package-summary.html                                                                                      
+                                                                                                                                                                                             
+  Essas são as documentações oficiais de Java. Recomendo a referência da Pattern API que explica todos os quantificadores (+, *, ?, {n,m}) e classes de caracteres (\d, \w, \s, etc.).       
+                                                                                                            

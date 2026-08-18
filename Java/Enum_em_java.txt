@@ -1,0 +1,33 @@
+Enum (enumeração) em Java é uma classe especial que representa um conjunto de constantes fixas 
+e pré-definidas. É usada quando você tem um número finito de valores possíveis.             
+                                                                                                                                                                                             
+  Exemplo:                                                                                                                                                                                   
+  public enum Dia {                                                                                                                                                                          
+      SEGUNDA, TERCA, QUARTA, QUINTA, SEXTA, SABADO, DOMINGO                                                                                                                                 
+  }                                                                                                                                                                                          
+                                                                                                                                                                                             
+  Enums podem ter campos, construtores e métodos:                                                                                                                                            
+  public enum Status {                                                                                                                                                                       
+      ATIVO("Ativo"),                                                                                                                                                                        
+      INATIVO("Inativo");                                                                                                                                                                    
+                                                                                                                                                                                             
+      private String descricao;                                                                                                                                                              
+                                                                                                                                                                                             
+      Status(String descricao) {                                                                                                                                                             
+          this.descricao = descricao;                                                                                                                                                        
+      }                                                                                                                                                                                      
+                                                                                                                                                                                             
+      public String getDescricao() {                                                                                                                                                         
+          return descricao;                                                                                                                                                                  
+      }                                                                                                                                                                                      
+  }                    
+
+Referências:
+- Oracle Java Documentation - Enum Types                                                                                                                                                   
+    - https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Enum.html                                                                                                       
+ 
+- The Java Language Specification - Enum Types                                                                                                                                             
+    - https://docs.oracle.com/javase/specs/jls/se21/html/jls-8.html#jls-8.9                                                                                                                  
+ 
+- Oracle Java Tutorial - Enum Types                                                                                                                                                        
+    - https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html     

@@ -1,0 +1,51 @@
+O que é var em Java?
+
+var é uma palavra-chave de tipo local que permite ao compilador inferir automaticamente o tipo de 
+uma variável baseado no valor atribuído a ela. Foi introduzida no Java 10 para 
+reduzir boilerplate (código redundante).
+
+Seu exemplo no projeto:
+
+// Linha 51 do AuthService.java
+var teste = authentication.getPrincipal();
+
+Aqui:
+- authentication.getPrincipal() retorna Object
+- O compilador infere que teste é do tipo Object
+- Equivalente a: Object teste = authentication.getPrincipal();
+
+Comparação:
+
+// Sem var (explícito)
+String email = "usuario@example.com";
+List<String> nomes = new ArrayList<>();
+ClienteUserDetails userDetails = (ClienteUserDetails) authentication.getPrincipal();
+
+// Com var (inferência)
+var email = "usuario@example.com";                                    // String
+var nomes = new ArrayList<>();                                        // ArrayList
+var userDetails = (ClienteUserDetails) authentication.getPrincipal(); // ClienteUserDetails
+
+Quando usar var:                                                                                                                                                                           
+                                                                                                                                                                                             
+  ✅ Usse quando:                                                                                                                                                                             
+  - O tipo é óbvio pelo contexto (ex: var lista = new ArrayList<>())                                                                                                                         
+  - Reduz poluição visual em tipos longos                                                                                                                                                    
+                                                                                                                                                                                             
+  ❌ Evite quanndo:                                                                                                                                                                           
+  - O tipo não é claro à primeira vista                                                                                                                                                      
+  - Prejudica a legibilidade do código                                                                                                                                                       
+                                                                                                                                                                                             
+  ---                                                                                                                                                                                        
+  Referências Oficiais:                                                                                                                                                                      
+                                                                                                                                                                                             
+  1. JEP 286: Local-Variable Type Inference (Java Enhancement Proposal)                                                                                                                      
+    - https://openjdk.org/jeps/286                                                                                                                                                           
+  2. Java Language Specification - Local Variable Type Inference                                                                                                                             
+    - https://docs.oracle.com/javase/specs/jls/se21/html/jls-14.html#jls-14.7                                                                                                                
+  3. Oracle Java Documentation - var Keyword                                                                                                                                                 
+    - https://docs.oracle.com/en/java/javase/21/docs/api/                                                                                                                                    
+  4. Java Coding Standards (Google Style Guide) - var usage                                                                                                                                  
+    - https://google.github.io/styleguide/javaguide.html#s4.8.7-local-variable-declarations                                                                                                  
+                                                                                                                                                                                             
+  A JEP 286 é a referência mais completa sobre como var funciona internamente e suas limitações. 

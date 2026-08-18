@@ -1,0 +1,38 @@
+Uma variável private static final em Java é uma combinação de três modificadores:
+
+1. private — Modificador de acesso
+- A variável é acessível apenas dentro da classe onde foi declarada
+- Não pode ser acessada por outras classes
+
+2. static — Variável de classe
+- Pertence à classe em si, não às instâncias individuais
+- Existe apenas uma cópia dessa variável, compartilhada por todas as instâncias da classe
+- Pode ser acessada sem criar um objeto (ex: ClassName.variavel)
+
+3. final — Constante
+- A variável não pode ser modificada após sua inicialização
+- Deve ser inicializada quando é declarada (ou no construtor/bloco estático)
+- Uma vez atribuído um valor, não pode ser alterado
+
+Exemplo prático:
+
+public class Configuracao {
+    private static final int TEMPO_SESSAO = 3600; // Constante compartilhada por todas as instâncias
+
+    // Tentativas abaixo causariam erro:
+    // TEMPO_SESSAO = 7200;  ❌ Erro: variável final
+    // Configuracao.TEMPO_SESSAO = 7200;  ❌ Erro: variável final
+}
+
+Resumo: É uma constante privada de classe — um valor imutável que pertence à classe como um 
+todo, não pode ser modificado e só é acessível internamente.
+
+Referências:
+1. Access Modifiers (private)
+https://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html
+
+2. Class Variables (static)
+https://docs.oracle.com/javase/tutorial/java/javaOO/classvars.html
+
+3. Final Variables (final)
+https://docs.oracle.com/javase/tutorial/java/javaOO/final.html
